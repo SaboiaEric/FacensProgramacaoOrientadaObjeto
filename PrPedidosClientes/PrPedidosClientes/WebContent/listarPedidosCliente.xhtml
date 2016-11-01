@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsf/core"
+>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Pedidos do Cliente</title>
+</head>
+<body>
+<h1>Dados do cliente:</h1>
+<h:outputText value="Código: #{mbCliente.clienteAtual.codigo}"  ></h:outputText>
+<br/>
+<h:outputText value="Nome: #{mbCliente.clienteAtual.nome}"  ></h:outputText>
+
+<c:view>
+    <h1>Pedidos cadastrados:</h1>
+	<h:form>
+		
+	    <h:commandLink  action="#{mbCliente.novoPedido()}" value="Novo Pedido"></h:commandLink>
+	    <h3>Pedidos Cadastrados</h3>
+		<h:dataTable  value="#{mbCliente.clienteAtual.pedidos}" var="pedido" border="1" >
+		
+		<h:column>
+		    <c:facet name="header">
+		        <h:outputText value="Número"/>
+		    </c:facet>
+		    <h:outputText  value="#{pedido.numero}"> </h:outputText>
+		</h:column>
+		
+		<h:column>
+		    <c:facet name="header">
+		        <h:outputText value="Descrição"/>
+		    </c:facet>
+		    <h:outputText  value="#{pedido.descricao}"> </h:outputText>
+		</h:column>
+		
+		<h:column>
+		    <c:facet name="header">
+		        <h:outputText value="Valor"/>
+		    </c:facet>
+		    <h:outputText  value="#{pedido.valor}"> </h:outputText>
+		</h:column>
+		
+		</h:dataTable>		
+
+	</h:form>
+</c:view>
+
+
+
+<h:link outcome="menu"  value ="menu" />
+
+</body>
+</html>
