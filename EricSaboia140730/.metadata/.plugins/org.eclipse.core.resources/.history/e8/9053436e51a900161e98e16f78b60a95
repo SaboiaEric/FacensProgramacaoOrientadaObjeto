@@ -1,0 +1,6 @@
+package sistema.DAO;
+
+public class CursoDAO {
+	private ArrayList<Curso> cursos;
+
+}

@@ -1,0 +1,9 @@
+package sistema.modelos;
+
+public class Curso extends Pessoa{
+	private int codigo;
+	private ArrayList<Aluno> alunos
+	private ArrayList<Professor> professores;
+	
+
+}

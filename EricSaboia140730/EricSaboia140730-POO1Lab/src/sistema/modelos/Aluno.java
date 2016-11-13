@@ -1,0 +1,31 @@
+package sistema.modelos;
+
+public class Aluno extends Pessoa{
+	private int matricula;
+	private String nome;
+	private Curso curso;
+	
+	/*Métodos básicos*/
+	public int getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+	public Curso getCurso() {
+		return curso;
+	}
+	public void setCurso(Curso curso) {
+		this.curso = curso;
+	}
+
+	public String getNome() {
+		return this.nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	/*Fim Métodos básicos*/
+}

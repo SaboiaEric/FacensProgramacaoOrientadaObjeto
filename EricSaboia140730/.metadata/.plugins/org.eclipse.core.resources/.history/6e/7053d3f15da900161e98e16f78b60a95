@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsf/core"
+>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Listar Todos</title>
+</head>
+<body>
+<h1>Alunos Cadastrados</h1>
+<c:view>
+	<h:form>
+		<h:dataTable  value="#{mbAluno.alunos}" var="aluno"  border="1">
+		
+		<h:column>
+		    <c:facet name="header">
+		        <h:outputText value="Matricula: "/>
+		    </c:facet>
+		    <h:outputText  value="#{aluno.matricula}"> </h:outputText>
+		</h:column>
+		
+		<h:column>
+		   <c:facet name="header">
+		        <h:outputText value="Nome: "/>
+		    </c:facet>
+		    <h:outputText  value="#{aluno.nome}"> </h:outputText>
+		</h:column>
+		
+		</h:dataTable>		
+
+	</h:form>
+</c:view>
+
+
+
+<h:link outcome="menu"  value ="menu" />
+
+</body>
+</html>

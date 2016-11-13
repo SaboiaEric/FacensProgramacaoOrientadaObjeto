@@ -1,0 +1,33 @@
+package sistema.mb;
+
+import java.util.ArrayList;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import sistema.DAO.ProfessorDAO;
+
+
+@ManagedBean(name="mbProfessor")
+@SessionScoped
+public class ProfessorManagedBean {
+	private ProfessorDAO professorDAO = new ProfessorDAO();
+    private Professor novoProfessor = new Professor();
+    private Professor ProfessorAtual;
+    
+    
+	/*BOTÕES GERAL*/
+	public String salvar(){
+		alunoDAO.salvar(novoAluno);
+		novoAluno = new Aluno();
+		return "menu";
+	}
+	/*FIM BOTÕES GERAL*/
+	
+	/*Retonar um ArrayList de ALUNO cadastrado da ALUNODAO*/
+	public ArrayList<Aluno> getAlunos()
+	{
+		return alunoDAO.getAlunos();
+	}
+
+}

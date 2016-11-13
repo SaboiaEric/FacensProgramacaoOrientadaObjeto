@@ -1,0 +1,15 @@
+package sistema.DAO;
+
+import java.util.ArrayList;
+
+import sistema.modelos.Curso;
+
+public class CursoDAO {
+	private ArrayList<Curso> cursos = new ArrayList<Curso>();
+
+	public ArrayList<Curso> getCursos() {
+		return cursos;
+	}
+
+
+}

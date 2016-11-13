@@ -1,0 +1,12 @@
+package sistema.mb;
+
+import sistema.DAO.CursoDAO;
+import sistema.modelos.Curso;
+
+public class AlunoManagedBean {
+	private CursoDAO cursoDAO = new CursoDAO();
+    private Curso novoCurso = new Curso();
+    private Curso cursoAtual;
+    
+
+}

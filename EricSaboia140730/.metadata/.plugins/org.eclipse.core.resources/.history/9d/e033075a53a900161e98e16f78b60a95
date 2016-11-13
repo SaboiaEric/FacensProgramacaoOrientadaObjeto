@@ -1,0 +1,10 @@
+package sistema.DAO;
+
+import java.util.ArrayList;
+
+import sistema.modelos.Professor;
+
+public class ProfessorDAO {
+	private ArrayList<Professor> professores = new ArrayList<Professor>();
+
+	}

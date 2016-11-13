@@ -34,7 +34,7 @@ public class CursoManagedBean {
 		return cursoDAO.getCursos();
 	}
     
-    public String deletarA(String idCurso)
+    public String deletarAluno(String idCurso)
     {
     	cursoDAO.deletarAluno(Integer.parseInt(idCurso));
     	return "listarAlunosCursos";
@@ -86,6 +86,11 @@ public class CursoManagedBean {
 		this.cursoAtual = cursoAtual;
 	}
 	
+	public String deletarAluno(int idAluno){
+		cursoAtual.removeAluno(idAluno);
+		
+		return "listarAlunosCursos";
+	}
 	
 
 }

@@ -1,0 +1,32 @@
+package sistema.modelos;
+
+public class Aluno extends Pessoa{
+	private int matricula;
+	private Curso curso;
+	
+	/*Métodos básicos*/
+	public int getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+	public Curso getCurso() {
+		return curso;
+	}
+	public void setCurso(Curso curso) {
+		this.curso = curso;
+	}
+	@Override
+	public String getNome() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setNome(String nome) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	//endregion
+}

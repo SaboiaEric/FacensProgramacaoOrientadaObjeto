@@ -1,0 +1,5 @@
+package sistema.modelos;
+
+public interface Pessoa {
+
+}

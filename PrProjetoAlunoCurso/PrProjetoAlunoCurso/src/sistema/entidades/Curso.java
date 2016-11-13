@@ -46,4 +46,9 @@ public class Curso {
 	public ArrayList<Professor> getProfessores(){
 		return professores;
 	}
+	
+	public void removeAluno(int aluno){
+		alunos.remove(aluno);
+	
+	}
 }

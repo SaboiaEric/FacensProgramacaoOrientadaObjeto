@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="sistema.modelos.Pessoa"/>
+<fullyQualifiedTypeName name="sistema.DAO.CursoDAO"/>
+<fullyQualifiedTypeName name="sistema.modelos.Curso"/>
+<fullyQualifiedTypeName name="javax.annotation.ManagedBean"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
+<fullyQualifiedTypeName name="sistema.modelos.Aluno"/>
+<fullyQualifiedTypeName name="sistema.DAO.AlunoDAO"/>
+<fullyQualifiedTypeName name="sistema.DAO.ProfessorDAO"/>
+<fullyQualifiedTypeName name="sistema.modelos.Professor"/>
+</qualifiedTypeNameHistroy>

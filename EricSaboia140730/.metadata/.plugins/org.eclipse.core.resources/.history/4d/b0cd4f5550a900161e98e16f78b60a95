@@ -1,0 +1,12 @@
+package sistema.modelos;
+
+import java.util.ArrayList;
+
+public class Curso{
+	private int codigo;
+	private 
+	private ArrayList<Aluno> alunos;
+	private ArrayList<Professor> professores;
+	
+
+}

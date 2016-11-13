@@ -1,0 +1,32 @@
+package sistema.DAO;
+
+import java.util.ArrayList;
+
+import sistema.modelos.Aluno;
+import sistema.modelos.Curso;
+
+public class AlunoDAO {
+	private ArrayList<Aluno> alunos = new ArrayList<Aluno>();
+
+	public ArrayList<Aluno> getAlunos() {
+		return alunos;
+	}
+
+	public void setAlunos(ArrayList<Aluno> alunos) {
+		this.alunos = alunos;
+	}
+	
+	public void salvar(Aluno aluno){
+		alunos.add(aluno);
+	}
+	
+	//Retonar o curso com ID idCurso
+	public Aluno getAlunoById (int idCurso)
+	{
+			for(int i=0; i< cursos.size(); i++)
+				if(idCurso == cursos.get(i).getCodigo())
+					return cursos.get(i);
+			
+			return null;
+	}
+}

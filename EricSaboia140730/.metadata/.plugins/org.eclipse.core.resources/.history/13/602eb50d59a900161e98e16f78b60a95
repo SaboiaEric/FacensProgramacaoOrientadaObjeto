@@ -1,0 +1,16 @@
+package sistema.mb;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import sistema.DAO.CursoDAO;
+import sistema.modelos.Curso;
+@ManagedBean(name="mbAluni")
+@SessionScoped
+public class AlunoManagedBean {
+	private CursoDAO cursoDAO = new CursoDAO();
+    private Curso novoCurso = new Curso();
+    private Curso cursoAtual;
+    
+
+}
